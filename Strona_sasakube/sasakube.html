@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<style>
+	
+	* {
+    box-sizing: border-box;
+		}
+		body {
+			font-family: 'Arvo', serif; 
+			padding: 10px;
+			/*background-color:black;*/
+			background:url("wood.jpg") no-repeat; 
+		}
+		
+		#container {
+			margin:auto;
+			width:75%;
+			background-color:rgba(255, 255, 255,0.4);
+			-webkit-box-shadow: 10px 10px 30px 5px rgba(25,25,25,0.5);
+			box-shadow: 10px 10px 30px 5px rgba(25,25,25,0.5);
+		}
+		
+		.header {
+		padding: 20px;
+		text-align: center;
+		background-color:rgba(255, 255, 255, 0.8);
+		margin:auto;
+		width:100%;
+		
+		}
+		
+		#headerP{
+			animation-name: example1;
+			animation-duration: 4s;
+			position: relative;
+		}
+		
+		#headerWords{
+			animation-name: example;
+			animation-duration: 4s;
+		}
+		
+		@-webkit-keyframes example {
+			from {color: #FFFFFF;}
+			to {color: #000000;}
+		}
+		
+		@keyframes example1{
+			0% {right:-100px; top:0px; color:#FFFFFF}
+			100% {right:0px; top:0px; color:#000000;}
+		}
+		
+		#nav{
+		
+		list-style-type:none;
+		float:left; 
+		padding:0px; 
+		margin-bottom:0px;
+		}
+		
+		#nav li{
+		display:inline;
+		margin:10px;
+		padding:4px;
+		
+		}
+		
+		#nav li:hover{
+		font-weight: bold;
+		
+		}
+		
+		a{
+			text-decoration: none;
+			color:black;
+		}
+		
+		.row{
+			margin:auto;
+			width:100%;
+		}
+		
+		.leftcolumn {   
+			float: left;
+			width: 75%;
+		}
+		
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			/*background-color: #f1f1f1;*/
+			padding-left: 20px;
+		}
+		
+			.fakeimg {
+		background-color:rgba(255, 255, 255,0.7);
+		width: 100%;
+		padding: 20px;
+		}
+
+			.card {
+		background-color:rgba(255, 255, 255,0.7);
+		padding: 20px;
+		margin-top: 20px;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background-color:rgba(255, 255, 255,0.7);
+			margin-top: 20px;
+		}
+		
+		@media screen and (max-width:800px) {
+		
+			.leftcolumn, .rightcolumn {
+				width:100%;
+				padding:0;
+			}
+			
+		}
+		
+		@media screen and (max-width: 400px) {
+    #nav li{
+        float: none;
+        width: 100%;
+    }
+}
+		
+		
+		
+		
+	</style>
+</head>
+ <body>
+	<div id="container">
+	<div class="header" style="font-family: 'Arvo', serif;padding-bottom:0px;">
+		<table id="headTable">
+			<tr>
+				<td style="width:20%;">
+					<img src="logo.png">
+				</td style="width:60%">
+				<td>
+				<h1 style="text-align:center;">SasaKube</h1>
+				<p id="headerP">Lorem ipsum</p>
+				</td>
+				<td style="width:20%">
+				<p id="headerWords">Lorem ipsum dolor sit amet</p>
+				</td>
+			 </tr>
+			 <tr>
+				<td colspan="2">
+					<ul id="nav">
+						<li style="margin-left:0px;"><a href="#">Home</a></li>
+						<li style="margin-left:0px;"><a href="#">O nas</a></li>
+						<li style="margin-left:0px;"><a href="#">Link</a></li>
+						<li style="margin-left:0px;"><a href="#">Link</a></li>
+						<li style="margin-left:0px;"><a href="#">Link</a></li>
+						<li style="margin-left:0px;"><a href="#">Kontakt</a></li>
+					</ul>
+				</td>
+			 </tr>
+		</table>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>TITLE HEADING</h2>
+				<h5>Title description</h5>
+			
+			<div class="fakeimg" style="height:200px;">Image</div>
+			<p>Some text...</p>
+			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+				quis nostrud exercitation ullamco.</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About Me</h2>
+					<div class="fakeimg" style="height:100px;">Image</div>
+					<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+			</div>
+			<div class="card">
+				 <h3>Popular Post</h3>
+				 <div class="fakeimg"><p>Image</p></div>
+				 <div class="fakeimg"><p>Image</p></div>
+				 <div class="fakeimg"><p>Image</p></div>
+			</div>
+		</div>
+		</div>
+	<div>
+			
+			<div class="footer">
+			  <h2>Footer</h2>
+			</div>
+	
+				
+</body>
+</html>
